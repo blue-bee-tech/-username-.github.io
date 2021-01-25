@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Contact</title>
+
+<style>
+
+.title {
+
+text-align:center;
+color: #00706a;
+font-size:30px;
+margin-top:3rem;
+}
+.contactFrm h4 {
+    font-size: 1em;
+    color: #252525;
+    margin-bottom: 0.5em;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+.contactFrm input[type="text"], .contactFrm input[type="email"] {
+    width: 92%;
+    color: #00706a;
+    background: #fff;
+    outline: none;
+    font-size: 0.9em;
+    padding: .7em 1em;
+    border: 1px solid #00706a;
+    -webkit-appearance: none;
+    display: block;
+    margin-bottom: 1.2em;
+}
+.contactFrm textarea {
+    resize: none;
+    width: 93.5%;
+    background: #fff;
+    color: #00706a;
+    font-size: 0.9em;
+    outline: none;
+    padding: .6em 1em;
+    border: 1px solid #00706a;
+    min-height: 10em;
+    -webkit-appearance: none;
+}
+.contactFrm input[type="submit"] {
+    outline: none;
+    color: #FFFFFF;
+    padding: 0.5em 0;
+    font-size: 1em;
+    margin: 1em 0 0 0;
+    -webkit-appearance: none;
+    background: #00706a;
+    transition: 0.5s all;
+    border: 2px solid #795CB4;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    width: 47%;
+    cursor: pointer;
+}
+.contactFrm input[type="submit"]:hover {
+    background: none;
+    color: #00706a;
+}
+p.statusMsg{font-size:18px;}
+p.succdiv{color: #008000;}
+p.errordiv{color:#E80000;}
+</style>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div >
+          <h1  class="brand"><a href="./index.html">logo</a></h1>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="./gallary.html">gallery</a></li>
+            <li><a href="./service.html">service</a></li>
+            <li><a href="./our-team.html">our team</a></li>
+            <li><a href="./contact.html">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header">
+      <div class="overlay">
+        <div class="center">
+          <h1>sudan life style</h1>
+        </div>
+      </div>
+    </div>
+        
+      </div>
+    </div>
+    
+	<div class="container">
+	<h2 class="title">Contact Form</h2>
+<div class="contactFrm">
+    <?php if(!empty($statusMsg)){ ?>
+        <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
+    <?php } ?>
+    <form action="" method="post">
+        <h4>Name</h4>
+        <input type="text" name="name" placeholder="Your Name" required="">
+        <h4>Email </h4>
+        <input type="email" name="email" placeholder="email@example.com" required="">
+        <h4>Subject</h4>
+        <input type="text" name="subject" placeholder="Write subject" required="">
+        <h4>Message</h4>
+        <textarea name="message" placeholder="Write your message here" required=""> </textarea>
+        <input type="submit" name="submit" value="Submit">
+        <div class="clear"> </div>
+    </form>
+</div>
+	</div>
+	
+	
+
+    <footer>
+      <div class="container">
+        <div class="icon">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linked-in"></i>
+          <i class="fa fa-google-plus"></i>
+          <i class="fa fa-github"></i>
+        </div>
+        <div class="text">
+          <p>all right are reserved &copy; 2021</p>
+        <p>design by ..........</p>
+        </div>
+        
+      </div>
+      
+    </footer>
+  </body>
+</html>
